@@ -3,26 +3,21 @@
 <head>
   <title>Board</title>
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
-  <link rel="stylesheet" href="css/board.css">
-  <script type='text/javascript' src="js/board.js" ></script>
+  <link rel="stylesheet" href="static/css/board.css">
+  <script type='text/javascript' src="static/js/soundmanager2.js"></script>
+  <script type='text/javascript' src="static/js/board.js" ></script>
 </head>
 
 <body>
   <div class="container">
     <h2>OBAMA</h2>
     <ul class="obama-board">
-      <li><a href="javascript:play('obama_complicated');">Complicated</a></li>
-      <li><a href="javascript:play('obama_fries');">Fries</a></li>
-      <li><a href="javascript:play('obama_ignorant');">Ignorant</a></li>
-      <li><a href="javascript:play('obama_number');">Number</a></li>
-      <li><a href="javascript:play('obama_that_guy');">That Guy</a></li>
+      <li><a href="javascript:sounds['obama_complicated'].play();">Complicated</a></li>
+      <li><a href="javascript:sounds['obama_fries'].play();">Fries</a></li>
+      <li><a href="javascript:sounds['obama_ignorant'].play();">Ignorant</a></li>
+      <li><a href="javascript:sounds['obama_number'].play();">Number</a></li>
+      <li><a href="javascript:sounds['obama_that_guy'].play();">That Guy</a></li>
     </ul>
-
-    <audio id="obama_complicated" src="OBAMA/OBAMA_COMPLICATED.mp3" />
-    <audio id="obama_fries" src="OBAMA/OBAMA_FRIES.mp3" />
-    <audio id="obama_ignorant" src="OBAMA/OBAMA_IGNORANT.mp3" />
-    <audio id="obama_number" src="OBAMA/OBAMA_NUMBER.mp3" />
-    <audio id="obama_that_guy" src="OBAMA/OBAMA_THAT_GUY.m4a" />
   </div>
 </body>
 
